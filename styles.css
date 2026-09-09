@@ -50,9 +50,19 @@ header {
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-size: 1.4rem;
   color: var(--ink);
   text-decoration: none;
+}
+
+.wordmark img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.55rem;
+  display: block;
 }
 
 .wordmark:hover { text-decoration: none; }
@@ -149,25 +159,7 @@ footer a { color: var(--ink-soft); }
   padding: 3.25rem 0 3rem;
 }
 
-.ink-blob {
-  position: absolute;
-  width: 22rem;
-  height: 22rem;
-  border-radius: 50%;
-  background: radial-gradient(circle at 40% 40%, rgba(44, 90, 74, 0.22), rgba(140, 58, 50, 0.08) 55%, transparent 70%);
-  right: 8%;
-  top: -4rem;
-  pointer-events: none;
-  animation: blob 14s ease-in-out infinite;
-  z-index: 0;
-}
-
 .hero > * { position: relative; z-index: 1; }
-
-@keyframes blob {
-  0%, 100% { transform: scale(1) translate(0, 0); }
-  50% { transform: scale(1.18) translate(-2rem, 1.5rem); }
-}
 
 .kicker {
   font-size: 0.8rem;
@@ -438,12 +430,13 @@ footer a { color: var(--ink-soft); }
 
 .download .lede { opacity: 0.82; }
 
-.download .ink-blob {
-  opacity: 0.55;
-  left: -6rem;
-  right: auto;
-  top: -8rem;
-  background: radial-gradient(circle, rgba(243, 238, 230, 0.18), transparent 68%);
+.app-icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 1.35rem;
+  display: block;
+  margin: 0 auto 1.25rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
 .store-mark {
@@ -502,7 +495,6 @@ footer a { color: var(--ink-soft); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ink-blob,
   .device-wrap,
   .hero .rise,
   .btn-store {
