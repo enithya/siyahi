@@ -1,6 +1,6 @@
 # Siyahi
 
-Public site for [Siyahi](https://enithya.github.io/siyahi/), a private on-device journal for daily money.
+Public product site: [enithya.github.io/siyahi](https://enithya.github.io/siyahi/)
 
 - [Privacy](https://enithya.github.io/siyahi/privacy.html)
 - [Support](https://enithya.github.io/siyahi/support.html)

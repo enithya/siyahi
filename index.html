@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Siyahi</title>
-  <meta name="description" content="Siyahi is a private journal for money in, money out, and who still has some of it. On this device only.">
+  <title>Siyahi — a private journal for daily money</title>
+  <meta name="description" content="Siyahi (स्याही, ink) is a paper-quiet ledger for cash, card, and UPI. Log what came in, what went out, and who still has some of it. On this device only.">
+  <meta property="og:title" content="Siyahi — a private journal for daily money">
+  <meta property="og:description" content="A paper-quiet ledger for cash, card, and UPI. Months close and carry forward. No account. No cloud.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://enithya.github.io/siyahi/">
+  <meta property="og:image" content="https://enithya.github.io/siyahi/images/home.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="product">
   <header>
     <a class="wordmark" href="./">Siyahi</a>
     <nav>
@@ -18,17 +24,121 @@
       <a href="support.html">Support</a>
     </nav>
   </header>
+
   <main>
-    <h1>A paper-quiet ledger for daily money.</h1>
-    <p class="lede">Log what came in, what went out, and who is still holding some of it. Siyahi (स्याही, ink) stays on this device. No account. No cloud.</p>
-    <p>Cash, card, and UPI. People you lent to or borrowed from. A light monthly cap. Months close and carry forward. You write the book; it does not post on its own.</p>
-    <div class="actions">
-      <a class="btn" href="mailto:support@enithya.com">Email support</a>
-      <a class="btn btn-ghost" href="privacy.html">Privacy</a>
-    </div>
+    <section class="wrap hero">
+      <div>
+        <p class="kicker">स्याही · ink</p>
+        <h1>A paper-quiet ledger for daily money.</h1>
+        <p class="lede">Log what came in, what went out, and who is still holding some of it. Siyahi stays on this phone. No account. No cloud. No ads.</p>
+        <div class="actions">
+          <a class="btn" href="#how">See how it works</a>
+          <a class="btn btn-ghost" href="privacy.html">Privacy</a>
+        </div>
+        <p class="hint">For iPhone and iPad. Coming to the App Store.</p>
+      </div>
+      <div class="device">
+        <img src="images/home.png" alt="Siyahi home: on hand, cash, card, UPI, and people who still owe you.">
+      </div>
+    </section>
+
+    <section class="band" id="how">
+      <div class="wrap">
+        <h2>Four ways money moves.</h2>
+        <p class="lede">That is the whole vocabulary. No burn rate. No net worth. You write the line when it actually happened.</p>
+        <div class="verbs">
+          <div class="verb paid"><strong>Got paid</strong><span>Money in — salary, freelance, a gift.</span></div>
+          <div class="verb spent"><strong>Spent</strong><span>Money out — food, rent, the auto home.</span></div>
+          <div class="verb lent"><strong>I lent</strong><span>Waiting on them. Optional due date and a nudge.</span></div>
+          <div class="verb"><strong>I borrowed</strong><span>You owe it. Same book, other direction.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <h2>The book adds up.</h2>
+        <p class="lede">Opening of this month is last month’s closing. In and out include everything that moved a wallet, so the page actually balances.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Cash, card, UPI</h3>
+            <p>Three piles, not one lump. On hand is the three together, as of the month you are looking at.</p>
+          </article>
+          <article class="card">
+            <h3>People stay open</h3>
+            <p>Maya still has eighty. Dev is overdue. Record a return when it comes back. Copy a short nudge if you need to ask.</p>
+          </article>
+          <article class="card">
+            <h3>Months close</h3>
+            <p>Past months lock. If you still add a line there, Siyahi shows how later openings and closings change, then waits for you to confirm.</p>
+          </article>
+          <article class="card">
+            <h3>A light cap</h3>
+            <p>Food, travel, rent, and the rest. Going over still saves. It is a journal, not a budget cop.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <h2>The pages.</h2>
+        <p class="lede">Phone for the pocket. iPad for the desk — a sidebar, and people split so the list and the person sit together.</p>
+        <div class="shots">
+          <figure class="shot">
+            <img src="images/add.png" alt="Add a line: got paid, spent, I lent, I borrowed.">
+            <figcaption>Add a line when something moves.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/activity.png" alt="Activity journal grouped by day.">
+            <figcaption>The journal, day by day.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/people.png" alt="People waiting on Dev and Maya; you owe Karim.">
+            <figcaption>Who still has some of it.</figcaption>
+          </figure>
+        </div>
+        <figure class="shot tablet">
+          <img src="images/ipad-home.png" alt="Siyahi on iPad with sidebar, on hand, and this month’s lines.">
+          <figcaption>On iPad, the book has room to sit open.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split">
+        <div>
+          <h2>It never leaves this device.</h2>
+          <p>There is no Siyahi server. Entries, people, your name, and an optional pin live on the phone. A pin is stored as a hash, not the digits. Recurring items are templates — they never post on their own.</p>
+          <p>Save a JSON copy when you want a spare. Restore reads a file you pick. We never receive it.</p>
+          <p>Start empty with an opening in cash, card, and UPI, or load a sample month to see the pages with a story already in them.</p>
+        </div>
+        <div>
+          <h2>What it is not.</h2>
+          <ul class="not-list">
+            <li>Not a bank, UPI app, or card feed.</li>
+            <li>Not double-entry accounting.</li>
+            <li>Not a shared household ledger.</li>
+            <li>Not a cloud backup we hold for you.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap close">
+      <h2>Ink for the day’s money.</h2>
+      <p class="lede">Siyahi is made by Enithya. Write when it happens. The book keeps the rest.</p>
+      <div class="actions" style="justify-content: center;">
+        <a class="btn" href="mailto:support@enithya.com">support@enithya.com</a>
+        <a class="btn btn-ghost" href="support.html">Support</a>
+      </div>
+    </section>
   </main>
+
   <footer>
     Enithya · <a href="mailto:support@enithya.com">support@enithya.com</a>
+    · <a href="privacy.html">Privacy</a>
+    · <a href="support.html">Support</a>
   </footer>
 </body>
 </html>
