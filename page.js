@@ -19,16 +19,6 @@
     reveal.forEach((el) => el.classList.add("in"));
   }
 
-  const screens = document.querySelectorAll(".screens img");
-  if (screens.length > 1 && !reduce) {
-    let i = 0;
-    setInterval(() => {
-      screens[i].classList.remove("is-on");
-      i = (i + 1) % screens.length;
-      screens[i].classList.add("is-on");
-    }, 3200);
-  }
-
   const device = document.querySelector(".device-wrap");
   if (device && !reduce) {
     device.addEventListener("pointermove", (e) => {
