@@ -143,10 +143,10 @@ footer a { color: var(--ink-soft); }
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr minmax(16rem, 22rem);
+  grid-template-columns: 1fr 14.5rem;
   gap: 3.5rem;
   align-items: center;
-  padding: 4rem 0 3.5rem;
+  padding: 3.25rem 0 3rem;
 }
 
 .ink-blob {
@@ -213,6 +213,9 @@ footer a { color: var(--ink-soft); }
 .device-wrap {
   --tilt-x: 0deg;
   --tilt-y: 0deg;
+  width: 14.5rem;
+  max-width: 100%;
+  margin-left: auto;
   perspective: 900px;
   animation: float 5.5s ease-in-out infinite;
 }
@@ -353,13 +356,15 @@ footer a { color: var(--ink-soft); }
 
 .shots {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 12.5rem));
+  justify-content: center;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .shot {
   margin: 0;
+  max-width: 12.5rem;
 }
 
 .shot img {
@@ -386,7 +391,8 @@ footer a { color: var(--ink-soft); }
 }
 
 .tablet {
-  margin-top: 2.5rem;
+  max-width: 36rem;
+  margin: 2.5rem auto 0;
 }
 
 .tablet img {
@@ -483,12 +489,15 @@ footer a { color: var(--ink-soft); }
 
   .hero { padding: 2.5rem 0 2.75rem; }
 
-  .device-wrap { max-width: 20rem; margin: 0 auto; }
+  .device-wrap { width: 12.5rem; margin: 0 auto; }
 
   .verbs,
-  .cards,
-  .shots {
+  .cards {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .shots {
+    grid-template-columns: repeat(2, minmax(0, 12.5rem));
   }
 }
 
@@ -518,9 +527,12 @@ footer a { color: var(--ink-soft); }
 
 @media (max-width: 560px) {
   .verbs,
-  .cards,
-  .shots {
+  .cards {
     grid-template-columns: 1fr;
+  }
+
+  .shots {
+    grid-template-columns: minmax(0, 12.5rem);
   }
 
   header { padding: 1rem; }
